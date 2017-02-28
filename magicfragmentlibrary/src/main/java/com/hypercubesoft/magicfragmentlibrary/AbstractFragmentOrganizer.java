@@ -53,6 +53,11 @@ abstract class AbstractFragmentOrganizer {
     }
 
     //TODO change to be private
+
+    /**
+     * this
+     * @return fragment
+     */
     public Fragment getOpenFragment(){
         String tag = fragmentManager.getBackStackEntryAt(fragmentManager.getBackStackEntryCount() -1).getName();
         return fragmentManager.findFragmentByTag(tag);
@@ -92,6 +97,12 @@ abstract class AbstractFragmentOrganizer {
         return openFragment(fragment, containerId);
     }
 
+    /**
+     *
+     *   /**
+     * Set specific animation resources to run for the fragments that are
+     * entering and exiting in this transaction.
+     */
     public void setAnimations(int enter, int exit, int popEnter, int popExit) {
         enterAnimation = enter;
         exitAnimation = exit;
