@@ -2,6 +2,9 @@
 [![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
 Installing
 --------
+
+You can use the gradle dependency, you have to add these lines in your build.gradle file:
+
 ```groovy
 allprojects {
 		repositories {
@@ -10,14 +13,30 @@ allprojects {
 		}
 	}
 ```
-
+and:
 ```groovy
 dependencies {
 	        compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.0'
 	}
 ```
+## How do I implement it?
 
+#### 1.Initialize 
+Create a list of fragments and pass them in
+```groovy
+ FragmentOrganizer fragmentOrganizer = new FragmentOrganizer(getSupportFragmentManager(), BlankFragment.class);
+ //import first fragment.
+        ArrayList<Class> ContainerFragments = new ArrayList<>();
+        ContainerFragments.add(BlankFragment.class);
+        ContainerFragments.add(BlankFragment1.class);
+        fragmentOrganizer.setUpContainer(R.id.wraper, ContainerFragments);
+```
 
+#### 2.Put a fragment(Replace fragment)
+Start fragment
+```groovy
+ fragmentOrganizer.putFragment(BlankFragment.class);
+```
 ## LICENSE
 
 Copyright (c) 2016-present, Aleksandar Marinkovic.
