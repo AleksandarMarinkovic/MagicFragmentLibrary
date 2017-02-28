@@ -28,5 +28,6 @@ dependencies {
     compile 'com.android.support:support-v4:25.2.0'
     compile 'com.google.android.gms:play-services:10.2.0'
     testCompile 'junit:junit:4.12'
-    compile project(':magicfragmentlibrary')
+    compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.0'
+   // compile project(':magicfragmentlibrary')
 }

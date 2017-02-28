@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+//import com.hypercubesoft.magicfragmentlibrary.FragmentOrganizer;
 import com.hypercubesoft.magicfragmentlibrary.FragmentOrganizer;
 import com.hypercubesoft.mytestapplication.fragments.BlankFragment;
 import com.hypercubesoft.mytestapplication.fragments.BlankFragment1;

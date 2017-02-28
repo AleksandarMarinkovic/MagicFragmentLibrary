@@ -1,4 +1,4 @@
-package com.hypercubesoft.mytestapplication.fragments;//package tv.sportssidekick.sportssidekick.fragment;
+//package com.hypercubesoft.mytestapplication.fragments;//package tv.sportssidekick.sportssidekick.fragment;
 //
 //import android.os.Bundle;
 //import android.support.annotation.Nullable;
@@ -6,12 +6,7 @@ package com.hypercubesoft.mytestapplication.fragments;//package tv.sportssidekic
 //import android.util.Log;
 //
 //import com.google.firebase.auth.FirebaseAuth;
-//import com.hwangjr.rxbus.annotation.Subscribe;
 //
-//
-//
-//import com.hwangjr.rxbus.RxBus;
-//import tv.sportssidekick.sportssidekick.service.BusEvent;
 //
 //
 ///**
@@ -53,9 +48,5 @@ package com.hypercubesoft.mytestapplication.fragments;//package tv.sportssidekic
 //    protected String getPrimaryArgument(){
 //        return getArguments().getString(BaseFragment.PRIMARY_ARG_TAG);
 //    }
-//
-//
-//
-//
 //
 //}
