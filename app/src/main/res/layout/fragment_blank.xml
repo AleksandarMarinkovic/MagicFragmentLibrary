@@ -1,0 +1,9 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cast_expanded_controller_ad_label_background_color"
+    tools:context="com.hypercubesoft.mytestapplication.fragments.BlankFragment">
+
+
+</FrameLayout>
