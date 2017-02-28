@@ -41,8 +41,68 @@ fragmentOrganizer.setUpContainer(R.id.wraper, ContainerFragments,true);
 ```groovy
  fragmentOrganizer.putFragment(BlankFragment.class);
 ```
+OR with arrgument
+```groovy
+ FragmentEvent fragmentEvent = new FragmentEvent(BlankFragment.class)
+ fragmentOrganizer.putFragment(fragmentEvent,"Text");
 
 
+//Get arrgument in fragment 
+getArguments().getString("PRIMARY_ARG_TAG");
+
+```
+
+### Helper functions
+
+manually Back Navigation 
+return true and flase
+```groovy
+fragmentOrganizer.handleBackNavigation()  
+```
+
+manually Back Navigation 
+return true and flase
+```groovy
+fragmentOrganizer.handleBackNavigation()  
+```
+
+Get open Fragmnet
+```groovy
+fragmentOrganizer.getOpenFragment(){
+```  
+Set Animations 
+```groovy
+fragmentOrganizer.setAnimations(enter,exit,popEnter,popExit)
+```
+#### It is not necessary 
+Create BasicFragment
+```groovy
+public abstract class BaseFragment extends Fragment {
+    public static final String PRIMARY_ARG_TAG = "PRIMARY_ARG_TAG";
+    private static final String TAG = "Base Fragment";
+    public Object getData() {
+        return data;
+    }
+    public void setData(Object data) {
+        this.data = data;
+    }
+    Object data;
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+    protected boolean hasPrimaryArgument(){
+        return null!=getArguments().getString(BaseFragment.PRIMARY_ARG_TAG);
+    }
+    protected String getPrimaryArgument(){
+        return getArguments().getString(BaseFragment.PRIMARY_ARG_TAG);
+    }
+}
+```
+```groovy
+public class MyFragment extends BaseFragment
+```
 ## Apps Using My Library
 Feel free to send me a pull request with your app and I'll link you here:
 
