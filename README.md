@@ -1,4 +1,22 @@
 # MagicFragmentLibrary
+
+Installing
+--------
+```groovy
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```groovy
+dependencies {
+	        compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.0'
+	}
+```
+
 [![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
 ## LICENSE
 
