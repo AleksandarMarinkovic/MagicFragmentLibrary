@@ -30,10 +30,14 @@ Create a list of fragments and pass them in
         ContainerFragments.add(BlankFragment.class);
         ContainerFragments.add(BlankFragment1.class);
         fragmentOrganizer.setUpContainer(R.id.wraper, ContainerFragments);
+	
+	
 ```
-
+OR Set in Container without back stack
+```groovy 
+fragmentOrganizer.setUpContainer(R.id.wraper, ContainerFragments,true);
+```
 #### 2.Put a fragment(Replace fragment)
-Start fragment
 ```groovy
  fragmentOrganizer.putFragment(BlankFragment.class);
 ```
