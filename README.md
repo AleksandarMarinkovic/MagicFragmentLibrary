@@ -1,5 +1,5 @@
 # MagicFragmentLibrary
-
+[![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
 Installing
 --------
 ```groovy
@@ -17,7 +17,7 @@ dependencies {
 	}
 ```
 
-[![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
+
 ## LICENSE
 
 Copyright (c) 2016-present, Aleksandar Marinkovic.
