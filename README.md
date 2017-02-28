@@ -37,6 +37,13 @@ Start fragment
 ```groovy
  fragmentOrganizer.putFragment(BlankFragment.class);
 ```
+
+
+## Apps Using My Library
+Feel free to send me a pull request with your app and I'll link you here:
+
+## Contributions
+If you have any problems, feel free to create an issue or pull request.
 ## LICENSE
 
 Copyright (c) 2016-present, Aleksandar Marinkovic.
