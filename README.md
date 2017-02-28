@@ -16,7 +16,7 @@ allprojects {
 and:
 ```groovy
 dependencies {
-	        compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.0'
+	       compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.1'
 	}
 ```
 ## How do I implement it?
@@ -110,7 +110,7 @@ Feel free to send me a pull request with your app and I'll link you here:
 If you have any problems, feel free to create an issue or pull request.
 ## LICENSE
 
-Copyright (c) 2016-present, Aleksandar Marinkovic.
+Copyright (c) 2017-present, Aleksandar Marinkovic.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
