@@ -1,5 +1,8 @@
 # MagicFragmentLibrary
 [![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
+--------
+Android library for managing multiple stacks of fragments. 
+
 Installing
 --------
 
@@ -16,7 +19,7 @@ allprojects {
 and:
 ```groovy
 dependencies {
-	        compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.0'
+	       compile 'com.github.AleksandarMarinkovic:MagicFragmentLibrary:1.1'
 	}
 ```
 ## How do I implement it?
@@ -54,18 +57,11 @@ getArguments().getString("PRIMARY_ARG_TAG");
 
 ### Helper functions
 
-manually Back Navigation 
+Manually Back Navigation 
 return true and flase
 ```groovy
 fragmentOrganizer.handleBackNavigation()  
 ```
-
-manually Back Navigation 
-return true and flase
-```groovy
-fragmentOrganizer.handleBackNavigation()  
-```
-
 Get open Fragmnet
 ```groovy
 fragmentOrganizer.getOpenFragment(){
@@ -103,6 +99,11 @@ public abstract class BaseFragment extends Fragment {
 ```groovy
 public class MyFragment extends BaseFragment
 ```
+
+## Documentation
+
+- [Javadoc](https://aleksandarmarinkovic.github.io/MagicFragmentLibraryDoc/)
+
 ## Apps Using My Library
 Feel free to send me a pull request with your app and I'll link you here:
 
@@ -110,7 +111,7 @@ Feel free to send me a pull request with your app and I'll link you here:
 If you have any problems, feel free to create an issue or pull request.
 ## LICENSE
 
-Copyright (c) 2016-present, Aleksandar Marinkovic.
+Copyright (c) 2017-present, Aleksandar Marinkovic.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
