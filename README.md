@@ -1,6 +1,8 @@
 # MagicFragmentLibrary
 [![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
+--------
 Android library for managing multiple stacks of fragments. 
+
 Installing
 --------
 
