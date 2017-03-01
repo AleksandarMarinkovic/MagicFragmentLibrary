@@ -101,7 +101,7 @@ public class MyFragment extends BaseFragment
 ```
 
 ## Demo application
--  [Demo-app](https://github.com/AleksandarMarinkovic/MagicFragmentLibrary/tree/master/Demo/src/main/java/com/hypercubesoft/demo)
+-  [Demo-app](https://github.com/AleksandarMarinkovic/MagicFragmentLibrary/tree/master/DemoProject)
 
 ## Documentation
 
