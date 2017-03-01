@@ -99,6 +99,11 @@ public abstract class BaseFragment extends Fragment {
 ```groovy
 public class MyFragment extends BaseFragment
 ```
+
+## Documentation
+
+- [Javadoc](https://aleksandarmarinkovic.github.io/MagicFragmentLibraryDoc/)
+
 ## Apps Using My Library
 Feel free to send me a pull request with your app and I'll link you here:
 
