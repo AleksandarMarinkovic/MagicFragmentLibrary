@@ -1,1 +1,1 @@
-include ':app', ':magicfragmentlibrary'
+include ':Demo', ':magicfragmentlibrary'

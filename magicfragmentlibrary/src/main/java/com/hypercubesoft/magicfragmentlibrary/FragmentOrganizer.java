@@ -19,14 +19,14 @@ public class FragmentOrganizer extends AbstractFragmentOrganizer {
     private SparseArray<List<Class>> containersMap;
     private Class initialFragment;
     /**
-     * Tag
+     * Primary tag
      */
     public static final String PRIMARY_ARG_TAG = "PRIMARY_ARG_TAG";
 
     /**
      * constructor
-     * @param fragmentManager fragment menager
-     * @param fragment first fragment in stack
+     * @param fragmentManager fragment manager
+     * @param fragment   First fragment in stack.  Fragment is not active
      */
     public FragmentOrganizer(FragmentManager fragmentManager, Class fragment) {
         super(fragmentManager);
@@ -37,30 +37,33 @@ public class FragmentOrganizer extends AbstractFragmentOrganizer {
     }
 
     /**
-     *
-     * @return Return open Fragment
+     * @return Returns the currently active fragment
      */
-    public Fragment getOpenFragment(){
-        String tag = fragmentManager.getBackStackEntryAt(fragmentManager.getBackStackEntryCount() -1).getName();
+    public Fragment getOpenFragment() {
+        String tag = fragmentManager.getBackStackEntryAt(fragmentManager.getBackStackEntryCount() - 1).getName();
         return fragmentManager.findFragmentByTag(tag);
     }
 
     /**
-     * Start fragment put in stack
+     * Open fragment
+     *
      * @param fragmentclass put Class and if fragment start
+     * @return return this FragmentEvent without id;
      */
-    public void putFragment(Class fragmentclass) {
+    public FragmentEvent putFragment(Class fragmentclass) {
         FragmentEvent event = new FragmentEvent(fragmentclass);
         Bundle arguments = new Bundle();
         arguments.putString(PRIMARY_ARG_TAG, event.getId());
         openFragment(createFragment(event.getType()), arguments, getFragmentContainer(event.getType()));
+        return event;
     }
 
     /**
+     * Open fragment
      *
-     * @param event  FragmentEvent
-     * @param id   set id In FragmentEvent and start Fragment
-     * @return  return this FragmentEvent with id;
+     * @param event FragmentEvent
+     * @param id    set id In FragmentEvent and start Fragment
+     * @return return this FragmentEvent with id;
      */
     public FragmentEvent putFragment(FragmentEvent event, String id) {
         event.setId(id);
@@ -71,9 +74,10 @@ public class FragmentOrganizer extends AbstractFragmentOrganizer {
     }
 
     /**
+     * Manually Back Navigation
+     * Pop the top state off the back stack.
      *
-     * @return true or false
-     * if last fragment in stack false
+     * @return Returns true if it is not the first fragment and pop fragment .
      */
     @Override
     public boolean handleBackNavigation() {
@@ -87,9 +91,10 @@ public class FragmentOrganizer extends AbstractFragmentOrganizer {
     }
 
     /**
+     * Get Fragment Container
      *
-     * @param fragment  fragment
-     * @return return key or -1
+     * @param fragment fragment
+     * @return returns id of the Container if there is exists a given fragment
      */
     protected int getFragmentContainer(Class fragment) {
         for (int i = 0; i < containersMap.size(); i++) {
@@ -105,21 +110,18 @@ public class FragmentOrganizer extends AbstractFragmentOrganizer {
     }
 
 
-
     /**
-     *
-     * @param containerResourceId Container id
-     * @param containerFragments Fragment list
+     * @param containerResourceId Container id,This can be any View,Layout or Fragment.
+     * @param containerFragments  Fragment list,All fragments in a container to put here
      */
     public void setUpContainer(int containerResourceId, ArrayList<Class> containerFragments) {
         setUpContainer(containerResourceId, containerFragments, false);
     }
 
     /**
-     *
-     * @param containerResourceId Container id
-     * @param containerFragments Fragment list
-     * @param withoutBackStack if true without back stack
+     * @param containerResourceId Container id, this can be any View,Layout or Fragment
+     * @param containerFragments  Fragment list. All fragments in a container to put here.
+     * @param withoutBackStack    Flag if true fragment will not create a stack for these fragments.
      */
     public void setUpContainer(int containerResourceId, ArrayList<Class> containerFragments, boolean withoutBackStack) {
         containersMap.put(containerResourceId, containerFragments);

@@ -8,11 +8,20 @@ package com.hypercubesoft.magicfragmentlibrary;
  */
 
 public class FragmentEvent {
-
+    /**
+     *
+     * @return Class can be transform to the fragment
+     */
     public Class getType() {
         return classType;
     }
 
+
+
+    /**
+     *
+     * @param type fragment class
+     */
     public void setType(Class type) {
         this.classType = type;
     }

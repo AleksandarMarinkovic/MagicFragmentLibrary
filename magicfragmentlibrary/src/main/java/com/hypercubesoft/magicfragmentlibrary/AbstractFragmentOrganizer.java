@@ -99,9 +99,13 @@ abstract class AbstractFragmentOrganizer {
 
     /**
      *
-     *   /**
-     * Set specific animation resources to run for the fragments that are
+     *  Set specific animation resources to run for the fragments that are
      * entering and exiting in this transaction.
+     *
+     * @param enter enter animation
+     * @param exit exit animation
+     * @param popEnter popEnter animation
+     * @param popExit popExit animation
      */
     public void setAnimations(int enter, int exit, int popEnter, int popExit) {
         enterAnimation = enter;
