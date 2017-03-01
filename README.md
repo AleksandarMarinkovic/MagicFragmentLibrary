@@ -1,5 +1,6 @@
 # MagicFragmentLibrary
 [![](https://jitpack.io/v/AleksandarMarinkovic/MagicFragmentLibrary.svg)](https://jitpack.io/#AleksandarMarinkovic/MagicFragmentLibrary)
+Android library for managing multiple stacks of fragments. 
 Installing
 --------
 
@@ -54,18 +55,11 @@ getArguments().getString("PRIMARY_ARG_TAG");
 
 ### Helper functions
 
-manually Back Navigation 
+Manually Back Navigation 
 return true and flase
 ```groovy
 fragmentOrganizer.handleBackNavigation()  
 ```
-
-manually Back Navigation 
-return true and flase
-```groovy
-fragmentOrganizer.handleBackNavigation()  
-```
-
 Get open Fragmnet
 ```groovy
 fragmentOrganizer.getOpenFragment(){
