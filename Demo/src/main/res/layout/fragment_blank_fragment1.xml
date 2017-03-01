@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cast_intro_overlay_button_background_color"
-    tools:context="com.hypercubesoft.mytestapplication.fragments.BlankFragment1">
+    tools:context="com.hypercubesoft.demo.fragments.BlankFragment1">
 
 
 </FrameLayout>

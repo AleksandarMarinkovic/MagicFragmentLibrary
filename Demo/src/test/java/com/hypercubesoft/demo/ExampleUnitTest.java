@@ -1,4 +1,4 @@
-package com.hypercubesoft.mytestapplication;
+package com.hypercubesoft.demo;
 
 import org.junit.Test;
 

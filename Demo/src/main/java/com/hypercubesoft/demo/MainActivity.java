@@ -1,4 +1,4 @@
-package com.hypercubesoft.mytestapplication;
+package com.hypercubesoft.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.widget.LinearLayout;
 
 //import com.hypercubesoft.magicfragmentlibrary.FragmentOrganizer;
 import com.hypercubesoft.magicfragmentlibrary.FragmentOrganizer;
-import com.hypercubesoft.mytestapplication.fragments.BlankFragment;
-import com.hypercubesoft.mytestapplication.fragments.BlankFragment1;
+import com.hypercubesoft.demo.fragments.BlankFragment;
+import com.hypercubesoft.demo.fragments.BlankFragment1;
 
 
 import java.util.ArrayList;
@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.hypercubesoft.mytestapplication.R.layout.activity_main);
+        setContentView(com.hypercubesoft.demo.R.layout.activity_main);
         fragmentOrganizer = new FragmentOrganizer(getSupportFragmentManager(), BlankFragment.class);
-        layout = (LinearLayout) findViewById(com.hypercubesoft.mytestapplication.R.id.wraper);
+        layout = (LinearLayout) findViewById(com.hypercubesoft.demo.R.id.wraper);
         mybulean = false;
         ArrayList<Class> leftContainerFragments = new ArrayList<>();
         leftContainerFragments.add(BlankFragment.class);
         leftContainerFragments.add(BlankFragment1.class);
-        fragmentOrganizer.setUpContainer(com.hypercubesoft.mytestapplication.R.id.wraper, leftContainerFragments);
-        button2 = (Button) findViewById(com.hypercubesoft.mytestapplication.R.id.button2);
+        fragmentOrganizer.setUpContainer(com.hypercubesoft.demo.R.id.wraper, leftContainerFragments);
+        button2 = (Button) findViewById(com.hypercubesoft.demo.R.id.button2);
         button2.setOnClickListener(this);
 
     }

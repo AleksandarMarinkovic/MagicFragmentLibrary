@@ -1,4 +1,4 @@
-package com.hypercubesoft.mytestapplication;
+package com.hypercubesoft.demo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

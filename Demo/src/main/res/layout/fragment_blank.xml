@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cast_expanded_controller_ad_label_background_color"
-    tools:context="com.hypercubesoft.mytestapplication.fragments.BlankFragment">
+    tools:context="com.hypercubesoft.demo.fragments.BlankFragment">
 
 
 </FrameLayout>
